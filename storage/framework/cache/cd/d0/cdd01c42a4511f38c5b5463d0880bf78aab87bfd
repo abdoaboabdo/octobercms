@@ -1,0 +1,1 @@
+1600195407a:1:{s:6:"states";a:4:{s:5:"label";s:34:"rainlab.location::lang.state.label";s:4:"list";s:52:"~/plugins/rainlab/location/models/state/columns.yaml";s:4:"form";s:51:"~/plugins/rainlab/location/models/state/fields.yaml";s:4:"view";a:1:{s:14:"toolbarButtons";s:13:"create|delete";}}}

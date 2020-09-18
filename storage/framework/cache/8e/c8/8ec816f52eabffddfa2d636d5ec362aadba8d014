@@ -1,0 +1,16 @@
+1597606777a:1:{s:14:"add-actors.htm";a:11:{s:8:"fileName";s:14:"add-actors.htm";s:7:"content";s:190:"title = "Add actors"
+url = "/add-actors"
+layout = "default"
+is_hidden = 0
+
+[actorform]
+
+[session]
+security = "user"
+redirect = "login"
+==
+<h2>Add an Actor</h2>
+
+{% component 'actorform' %}";s:5:"mtime";i:1585914482;s:6:"markup";s:52:"<h2>Add an Actor</h2>
+
+{% component 'actorform' %}";s:4:"code";N;s:5:"title";s:10:"Add actors";s:3:"url";s:11:"/add-actors";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:9:"actorform";a:0:{}s:7:"session";a:2:{s:8:"security";s:4:"user";s:8:"redirect";s:5:"login";}}}

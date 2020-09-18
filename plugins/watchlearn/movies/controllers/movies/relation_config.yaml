@@ -1,0 +1,16 @@
+genres:
+  label: Genre
+  view:
+    list: $/watchlearn/movies/models/genre/columns.yaml
+    toolbarButtons: add|remove
+  manage:
+    form: $/watchlearn/movies/models/genre/fields.yaml
+    showCheckboxes: true
+actors:
+  label: actors
+  view:
+    list: $/watchlearn/movies/models/actor/columns.yaml
+    recordsPerPage: 10
+  manage:
+    form: $/watchlearn/movies/models/actor/fields.yaml
+    showSearch: true

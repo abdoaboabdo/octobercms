@@ -1,0 +1,18 @@
+1597606777a:1:{s:10:"footer.htm";a:5:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:312:"<footer class="main-footer">
+    <div class="container">
+        <h3>This is our footer</h3>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam laudantium aspernatur fugit nulla doloribus id, aliquam modi repudiandae possimus assumenda!
+        </p>
+    </div>
+</footer>
+";s:5:"mtime";i:1585486681;s:6:"markup";s:311:"<footer class="main-footer">
+    <div class="container">
+        <h3>This is our footer</h3>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam laudantium aspernatur fugit nulla doloribus id, aliquam modi repudiandae possimus assumenda!
+        </p>
+    </div>
+</footer>";s:4:"code";N;}}

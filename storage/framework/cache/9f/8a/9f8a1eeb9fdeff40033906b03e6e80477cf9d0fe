@@ -1,0 +1,1 @@
+1601285285a:1:{s:7:"columns";a:1:{s:4:"name";a:5:{s:5:"label";s:4:"Name";s:4:"type";s:4:"text";s:10:"searchable";b:1;s:8:"sortable";b:1;s:6:"select";s:28:"concat(name, '  ', lastname)";}}}

@@ -1,0 +1,1 @@
+1600195407a:1:{s:6:"scopes";a:1:{s:7:"enabled";a:3:{s:5:"label";s:47:"rainlab.location::lang.locations.disabled_label";s:4:"type";s:6:"switch";s:10:"conditions";a:2:{i:0;s:16:"is_enabled = '1'";i:1;s:16:"is_enabled = '0'";}}}}

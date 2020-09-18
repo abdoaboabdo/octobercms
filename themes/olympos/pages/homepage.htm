@@ -1,0 +1,69 @@
+title = "Homepage"
+url = "/"
+layout = "default"
+is_hidden = 0
+
+[actors]
+results = 0
+sortOrder = "name desc"
+
+[siteSearchInclude]
+==
+
+<?php
+    use Watchlearn\Movies\Models\Movie;
+    function Onstart(){
+        $this['movies']=Movie::take(4)->get();
+    }
+?>
+
+==
+<form action="{{ 'search' | page }}" method="get">
+    <input name="q" type="text" placeholder="What are you looking for?" autocomplete="off">
+    <button type="submit">Search</button>
+</form>
+
+
+<ul class="record-list">
+    {% for movie in movies %}
+        <li class="ui segment stacked">
+            <h3>
+                <a href="{{ 'movie-single'|page({genre: movie.genres[0].slug,slug:movie.slug }) }}">
+                    {{ movie.name }} - {{ movie.year }}
+                </a>
+            </h3>
+            {% for genre in movie.genres %}
+                <a href="/genres/{{ genre.slug }}">{{ genre.genre_title }}</a><br>
+            {% endfor %}
+            {{ html_limit(movie.description,150) }}
+        </li>
+    {% else %}
+        <li class="no-data">no movies Found</li>
+    {% endfor %}
+</ul>
+
+<h1>This is homepage</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias consequatur distinctio, eius excepturi
+    fugit laborum nam nesciunt nobis, perferendis recusandae sit suscipit ut, voluptates. Consequuntur debitis iste
+    sapiente?</p><p>Delectus facilis necessitatibus qui quidem sequi? Ab ad aut autem deserunt doloribus dolorum,
+    facilis hic in laborum minima nam nulla perferendis quae quaerat quibusdam reprehenderit sequi tenetur, voluptate
+    voluptatibus voluptatum?</p><p>Architecto commodi cumque eum eveniet natus nihil sint sit, voluptatibus. Ab
+    aspernatur cum et excepturi ipsum natus, nobis non, perferendis perspiciatis porro, quam quibusdam ratione. Alias at
+    delectus maiores obcaecati.</p><p>Adipisci consequuntur, culpa cumque dolor error et fuga fugiat labore molestiae
+    molestias mollitia nam nemo nobis, non nostrum optio possimus provident quo reprehenderit suscipit! Atque dicta
+    distinctio omnis quo repellat?</p><p>Ab aut eos esse placeat vitae. Adipisci deleniti dolores enim esse est illo,
+    magnam nemo neque nesciunt non provident quam quidem quo quod sed, soluta voluptates. Laboriosam molestias quos
+    vel?</p><p>Alias distinctio dolor omnis quasi quis rem repellat saepe sed soluta ullam! Atque consectetur dolorem
+    eligendi illum ipsam iusto minus natus placeat quam qui ratione recusandae, sit temporibus unde ut?</p><p>Commodi
+    ducimus earum et molestiae optio. Accusantium consequatur culpa cupiditate deleniti doloremque, dolores ea est ex
+    harum molestiae nobis obcaecati odit, perspiciatis provident, quas quasi quis quo totam vel voluptate.</p><p>Cum
+    cupiditate dolore doloribus eligendi enim eveniet iure minus nesciunt quam quidem quisquam repellat, sint tempore!
+    Ad aspernatur dolore dolorum explicabo iure maiores minus nisi omnis reiciendis! Exercitationem, laboriosam
+    nemo?</p><p>Amet autem consequuntur dolorem eaque earum, esse facilis laboriosam nesciunt nisi quibusdam quod
+    reprehenderit ullam voluptas. Cum fugiat nostrum quae vero? Est fugit illum inventore officia ullam? Ipsum, nam
+    omnis?</p><p>Blanditiis commodi dolore, eveniet expedita ipsa iste nobis perferendis possimus quae quos, sed, sit
+    tempora veritatis. Ad amet, fugiat id illum itaque nesciunt recusandae repellat? Aliquam est explicabo rem
+    soluta!</p>
+
+{% component 'actors' %}

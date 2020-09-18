@@ -1,0 +1,1 @@
+1600194313a:5:{s:4:"name";s:27:"pixel.shop::lang.menu.order";s:10:"modelClass";s:23:"Pixel\Shop\Models\Order";s:4:"form";s:37:"$/pixel/shop/models/order/fields.yaml";s:15:"defaultRedirect";s:17:"pixel/shop/orders";s:6:"update";a:3:{s:5:"title";s:0:"";s:8:"redirect";s:17:"pixel/shop/orders";s:13:"redirectClose";s:17:"pixel/shop/orders";}}

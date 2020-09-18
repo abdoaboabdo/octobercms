@@ -1,0 +1,50 @@
+title = "Movie Single"
+url = "/movies/:genre/:slug"
+layout = "default"
+is_hidden = 0
+==
+<?php
+use Watchlearn\Movies\Models\Movie;
+    function Onstart(){
+        $this['movie']=Movie::where('slug','=',$this->param('slug'))->first();
+    }
+?>
+==
+{% if movie %}
+    <h2>{{ movie.name}}</h2>
+    <img src="{{ movie.poster.thumb(200,auto) }}" alt="{{ movie.name}}">
+    <h4>{{ movie.year }}</h4>
+
+    <h3>Description</h3>
+
+    {{ movie.description|raw }}
+
+    <h3>Actors</h3>
+    <p>
+        {% for actor in movie.actors%}
+            {{ actor.name  }} {{ ' ' }}
+            {{ actor.lastname }}<br>
+        {% endfor %}
+    </p>
+
+    <h3>Gallery</h3>
+
+    <ul class="gallery clearfix">
+        {% for image in movie.movie_gallery %}
+            <li>
+                <a href="{{ image.path }}">
+                    <img src="{{ image.thumb(80,80,{'mode':'crop'}) }}" alt="">
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h3>Genres</h3>
+    <p>
+        {% for genre in movie.genres %}
+            <a href="/genres/{{ genre.slug }}">{{ genre.genre_title }}</a><br>
+        {% endfor %}
+    </p>
+{% else %}
+    {{ notFoundMessage }}
+{% endif %}

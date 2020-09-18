@@ -1,0 +1,14 @@
+1597606777a:1:{s:16:"filterMovies.htm";a:10:{s:8:"fileName";s:16:"filterMovies.htm";s:7:"content";s:155:"title = "Filter Movies"
+url = "/filter-movies"
+layout = "default"
+is_hidden = 0
+
+[filtermovies]
+
+==
+<h2>Filter Movies</h2>
+
+{% component 'filtermovies' %}
+";s:5:"mtime";i:1586550575;s:6:"markup";s:54:"<h2>Filter Movies</h2>
+
+{% component 'filtermovies' %}";s:4:"code";N;s:5:"title";s:13:"Filter Movies";s:3:"url";s:14:"/filter-movies";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:12:"filtermovies";a:0:{}}}

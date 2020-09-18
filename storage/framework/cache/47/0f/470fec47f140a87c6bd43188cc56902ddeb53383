@@ -1,0 +1,1 @@
+1600195507a:1:{s:6:"fields";a:2:{s:10:"class_name";a:3:{s:5:"label";s:45:"responsiv.currency::lang.converter.class_name";s:4:"type";s:8:"dropdown";s:10:"attributes";a:1:{s:8:"onChange";s:28:"$(this).request('onRefresh')";}}s:16:"refresh_interval";a:2:{s:5:"label";s:51:"responsiv.currency::lang.converter.refresh_interval";s:4:"type";s:8:"dropdown";}}}

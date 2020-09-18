@@ -1,0 +1,12 @@
+1597606777a:1:{s:10:"search.htm";a:10:{s:8:"fileName";s:10:"search.htm";s:7:"content";s:245:"title = "search"
+url = "/search"
+layout = "default"
+is_hidden = 0
+
+[searchResults]
+resultsPerPage = 10
+showProviderBadge = 1
+noResultsMessage = "Your search returned no results."
+visitPageMessage = "Visit page"
+==
+{% component 'searchResults' %}";s:5:"mtime";i:1586112815;s:6:"markup";s:31:"{% component 'searchResults' %}";s:4:"code";N;s:5:"title";s:6:"search";s:3:"url";s:7:"/search";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:13:"searchResults";a:4:{s:14:"resultsPerPage";s:2:"10";s:17:"showProviderBadge";s:1:"1";s:16:"noResultsMessage";s:32:"Your search returned no results.";s:16:"visitPageMessage";s:10:"Visit page";}}}
